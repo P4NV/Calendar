@@ -1,4 +1,10 @@
 import calendarIcon from '../images/calendar.png';
+import aboutIcon from '../images/about.png';
+import contactIcon from '../images/contact.png';
+import dashboardIcon from '../images/dashboard.png';
+import helpIcon from '../images/support.png';
+import homeIcon from '../images/home.png';
+import settingsIcon from '../images/setting.png';
 
 export default function sidebar() {
 
@@ -8,13 +14,14 @@ export default function sidebar() {
             <h2><img src={calendarIcon} alt="Calendar" />Sidebar Menu</h2>
             <ul>
                 <h3>Menu</h3>
-                    <li><img src="" alt="Dashboard-  " />Dashboard</li>
-                    <li><img src="" alt="Home-  " />Home</li>
-                    <li><img src="" alt="About-  " />About</li>
-                    <li><img src="" alt="Contact-  " />Contact</li>
+                    <li><img src={dashboardIcon} alt="-" width="20px" />Dashboard</li>
+                    <li><img src={homeIcon} alt="-" width="20px" />Home</li>
+                    <li><img src={aboutIcon} alt="-" width="20px" />About</li>
+                    <li><img src={contactIcon} alt="-" width="20px" />Contact</li>
+                    <hr/>
                 <h3>Other</h3>
-                    <li><img src="" alt="Settings-  " />Settings</li>
-                    <li><img src="" alt="Help-  " />Help</li>
+                    <li><img src={settingsIcon} alt="-" width="20px" />Settings</li>
+                    <li><img src={helpIcon} alt="-" width="20px" />Help</li>
             </ul>
             <div className="foot-Section-Sidebar">
                 <h4>Member+</h4>
