@@ -6,15 +6,17 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-          <header>
-            <HeadSection />
-          </header>
-          <main>
-
-          </main>
-          <footer>
-
-          </footer>
+      <div className="main-content">
+        <header>
+          <HeadSection />
+        </header>
+        <main className="calendar-main">
+          {/* Calendar content will go here */}
+        </main>
+        <footer className="app-footer">
+          {/* Footer content will go here */}
+        </footer>
+      </div>
     </div>
   );
 }
