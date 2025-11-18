@@ -1,5 +1,6 @@
 import Sidebar from './components/SideBar';
 import HeadSection from './components/HeadSection';
+import CalendarCont from './components/CalendarCont';
 import './App.css';
 
 function App() {
@@ -11,10 +12,10 @@ function App() {
           <HeadSection />
         </header>
         <main className="calendar-main">
-          {/* Calendar content will go here */}
+          <CalendarCont />
         </main>
         <footer className="app-footer">
-          {/* Footer content will go here */}
+          {/* <p>&copy; 2025 Calendar App. All rights reserved.</p> */}
         </footer>
       </div>
     </div>
