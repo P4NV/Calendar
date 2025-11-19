@@ -1,7 +1,7 @@
 import share from '../images/icons8-share-50.png';
 import notification from '../images/icons8-notification-50.png';
 import user from '../images/icons8-profile-48.png';
-export default function HeadSection(){
+export default function HeadSection({ showTask, setShowTask }){
 
     return (
         <div className="head-container">
@@ -17,9 +17,21 @@ export default function HeadSection(){
                 <button className="month-View">Yearly</button>
                 <button className="week-View">Monthly</button>
                 <button className="day-View">Weekly</button>
+                <div className='left-buttons-headSection'>
+                    <button 
+                      className={`task-View ${showTask ? 'active' : ''}`}
+                      onClick={() => setShowTask(true)}
+                    >
+                      Tasks
+                    </button>
+                    <button 
+                      className={`notes-View ${showTask ? '' : 'active'}`}
+                      onClick={() => setShowTask(false)}
+                    >
+                      Notes
+                    </button>
+                </div>
             </div>
         </div>
     );
-
-
 }
